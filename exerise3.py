@@ -1,6 +1,6 @@
 def Input_Values():
     while type:
-            input_number = input("Введите число: ")
+            input_number = input("Введите положительное целое число,кроме 196: ")
             try:
                 input_number=int(input_number)
             except ValueError:
@@ -11,6 +11,9 @@ def Input_Values():
                 continue
             if input_number<0:
                 print("Введите положиельное число")
+                continue
+            elif input_number==196:
+                print('Число не должно равняться 196')
                 continue
             break        
            
